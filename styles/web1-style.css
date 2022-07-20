@@ -8,6 +8,34 @@ body {
     margin: 0;
 }
 
+.ball {
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: red;
+    position: relative;
+    left: 390px;
+    transition: tranform 1s ease-out 0.3s;
+}
+
+@keyframes sliding {
+    0% {
+        color: white;
+
+
+    }
+
+    50% {
+        color: lightblue;
+
+    }
+
+    100% {
+        color: aquamarine;
+
+    }
+}
+
 .banner {
     background-color: hsl(0, 0%, 9%);
     display: grid;
@@ -21,6 +49,8 @@ body {
     margin-top: 50px;
     border-radius: 30px;
 
+    animation-play-state: running;
+
 
 
 }
@@ -30,6 +60,7 @@ body {
     padding-left: 106px;
     padding-top: 80px;
     padding-bottom: 80px;
+
 }
 
 
@@ -40,6 +71,8 @@ body {
     padding-bottom: 0;
     line-height: 1.2;
     margin-bottom: 10px;
+    animation: sliding 1s ease-in-out 0.5s infinite alternate;
+
 }
 
 .banner p {
@@ -50,6 +83,8 @@ body {
     padding-top: 0;
     font-weight: 90px;
     line-height: 2;
+    animation: sliding 1s ease-in-out 0.5s infinite alternate;
+    /* animation: sliding 1s ease-in-out 0.5s infinite alternate; */
 }
 
 .banner img {
@@ -57,12 +92,17 @@ body {
     height: 470px;
     padding-right: 70px;
     padding-top: 40px;
+    padding-right: 0;
+
+
+
 }
 
 .banner div,
 p,
 a {
     color: white;
+
 }
 
 .button {
@@ -286,6 +326,7 @@ footer h1 {
         margin-right: 10px;
         margin-top: 15px;
 
+
     }
 
     .banner-text h1 {
@@ -375,8 +416,8 @@ footer h1 {
 
         height: 35em;
         width: 50em;
-        margin-left: 5px;
-        margin-right: 0;
+        margin-left: 35px;
+        margin-right: 55px;
     }
 
     .banner-text {
@@ -422,7 +463,8 @@ footer h1 {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 2px;
         margin-top: -100px;
-        margin-right: 0px;
+        margin-right: 93px;
+        margin-left: 100px;
 
     }
 
@@ -439,6 +481,8 @@ footer h1 {
         height: 15em;
 
     }
+
+
 
     /*----------------------------------------------------------------
                    footer
