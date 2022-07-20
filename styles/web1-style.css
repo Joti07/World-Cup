@@ -359,10 +359,11 @@ footer h1 {
     }
 
     .banner img {
-        width: 340px;
-        height: 390px;
+        width: 280px;
+        height: 290px;
         margin-left: 10%;
-        padding-top: 1%;
+        padding-bottom: 20%;
+        padding-top: 0;
     }
 
     /*----------------------------------------------------------------
@@ -403,7 +404,7 @@ footer h1 {
     }
 
     .blog .blog-banner img {
-        width: 21em;
+        width: 17em;
         height: 20em;
 
     }
